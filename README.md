@@ -58,14 +58,6 @@ This website is built using modern web technologies, including:
 
 ---
 
-## 📸 Adding a Preview Image
-
-To include the preview image in the `README.md`:
-1. Take a screenshot or record a GIF of the website.
-2. Save the file in the `public` folder (e.g., `public/website-preview.png`).
-3. Update the `README.md` file with the correct path to the image.
-
----
 
 ## Community and Support
 
