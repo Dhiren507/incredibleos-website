@@ -1,50 +1,79 @@
 # IncredibleOS Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the official website for **IncredibleOS**, a custom ROM designed specifically for the **Samsung Galaxy M30s**. This website serves as a central hub for users to explore, download, and learn more about IncredibleOS and its features.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Website Preview
 
-## Expanding the ESLint configuration
+![IncredibleOS Website Preview](./public/gif.gif)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+> *Above is a preview of the IncredibleOS website showcasing its modern design and user-friendly interface.*
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Purpose of the Website
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+The IncredibleOS website is designed to provide users with:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Information about IncredibleOS**  
+   Learn about the custom ROM, its features, and the different versions available. The website highlights the unique benefits of IncredibleOS, such as improved performance, battery optimizations, and deep customization options.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. **Version Details**  
+   Explore the three versions of IncredibleOS:
+   - **v1**: Based on One UI 4.1.1 (Android 12)
+   - **v2**: Based on One UI 5 (Android 13)
+   - **v3**: Based on One UI 6 (Android 14)  
+   Each version is tailored to provide a unique experience with specific features and enhancements.
+
+3. **Download Options**  
+   Easily download the ROM files for your preferred version. The website provides multiple download options, including Google Drive, Telegram, GitHub, and XDA forums, ensuring accessibility for all users.
+
+4. **Installation Instructions**  
+   Step-by-step instructions are provided to help users install IncredibleOS on their Galaxy M30s safely and efficiently.
+
+5. **Community Links**  
+   Connect with the IncredibleOS community through Telegram and XDA forums for support, updates, and discussions.
+
+---
+
+## 🚀 Features of the Website
+
+- **Hero Section**: A visually appealing introduction to IncredibleOS, showcasing its purpose and key highlights.
+- **Features Section**: Detailed information about the unique features of IncredibleOS, such as custom kernels, camera enhancements, and performance optimizations.
+- **Versions Section**: A comparison of the three versions of IncredibleOS, helping users choose the one that best suits their needs.
+- **Download Section**: A user-friendly interface to download the ROM files and access installation instructions.
+- **Responsive Design**: The website is fully responsive, ensuring a seamless experience across all devices.
+
+---
+
+## 🛠️ Technologies Used
+
+This website is built using modern web technologies, including:
+
+- **React**: For building the user interface.
+- **Vite**: For fast development and optimized builds.
+- **Tailwind CSS**: For styling and responsive design.
+- **Framer Motion**: For smooth animations and transitions.
+
+---
+
+## 📸 Adding a Preview Image
+
+To include the preview image in the `README.md`:
+1. Take a screenshot or record a GIF of the website.
+2. Save the file in the `public` folder (e.g., `public/website-preview.png`).
+3. Update the `README.md` file with the correct path to the image.
+
+---
+
+## Community and Support
+
+Join the IncredibleOS community for updates, support, and discussions:
+
+- **Telegram**: [IncredibleOS Chat](https://t.me/incredibleOSChat)
+- **XDA Forums**: [IncredibleOS Thread](https://xdaforums.com/)
+
+---
+
+Thank you for choosing IncredibleOS to enhance your Galaxy M30s experience!
