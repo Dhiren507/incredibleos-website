@@ -25,6 +25,7 @@ module.exports = {
           v1: '#4B0082', // v1 (One UI 4.1.1) - Indigo
           v2: '#FF5722', // v2 (One UI 5) - Deep Orange
           v3: '#9C27B0', // v3 (One UI 6) - Purple
+          v4: '#00BCD4', // v4 (One UI 4.1) - Cyan
         },
         fresh: {
           primary: '#46c88f',

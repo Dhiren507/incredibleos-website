@@ -20,11 +20,11 @@ interface VersionDownloadProps {
 const VersionDownload = ({ version, name, color, description, options, isActive }: VersionDownloadProps) => {
   return (
     <div className={`rounded-xl overflow-hidden shadow-lg transition-all duration-300 ${isActive ? 'opacity-100' : 'opacity-0 hidden'}`}>
-      <div className={`${color} p-6 text-white`}>
+      <div className={`${color} p-6 text-white`}> {/* Top header */}
         <h3 className="text-2xl font-gilroy font-bold mb-1">{name}</h3>
         <p className="opacity-90">{description}</p>
       </div>
-      <div className="p-6 bg-white">
+      <div className="p-6 bg-white"> {/* Card body */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {options.map((option) => (
             <a
@@ -173,6 +173,38 @@ const DownloadSection = () => {
           description: 'Discussion and support',
           icon: 'xda',
           url: 'https://xdaforums.com/t/rom-14-one-ui-6-1-stable-incredible-os-v3-for-galaxy-m30s.4728388/',
+        },
+      ],
+    },
+    {
+      id: 'v4',
+      name: 'IncredibleOS v4',
+      color: 'bg-incredible-v4',
+      description: 'Most Stable ROM Ever Made with almost no Bugs!!',
+      options: [
+        {
+          name: 'Google Drive',
+          description: 'Fastest download option',
+          icon: 'google-drive',
+          url: 'https://drive.google.com/file/d/1Ns3IQiPJFZHJx7-6qT_VR-JSwVOW8fsw/view?usp=sharing',
+        },
+        {
+          name: 'Telegram Channel',
+          description: 'Join our community',
+          icon: 'telegram',
+          url: 'https://t.me/incredibleOSUpdates/39',
+        },
+        {
+          name: 'GitHub',
+          description: 'Source code and releases',
+          icon: 'github',
+          url: 'https://github.com/Dhiren507/incredibleOS-v4',
+        },
+        {
+          name: 'XDA Thread',
+          description: 'Discussion and support',
+          icon: 'xda',
+          url: 'https://xdaforums.com/t/rom-12-oneui-4-1-stable-incredible-os-v4-for-m30s.1234567/',
         },
       ],
     },

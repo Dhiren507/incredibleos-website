@@ -18,14 +18,14 @@ const VersionCard = ({ version, name, baseVersion, features, color, delay }: Ver
       viewport={{ once: true }}
       className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
     >
-      <div className={`${color} p-6 text-white`}>
+      <div className={`${color} p-6 text-white`}> {/* Top header */}
         <div className="flex justify-between items-center">
           <h3 className="text-2xl font-gilroy font-bold">{name}</h3>
           <span className="text-sm bg-white/20 px-3 py-1 rounded-full">{version}</span>
         </div>
         <p className="mt-2 opacity-90">Based on {baseVersion}</p>
       </div>
-      <div className="p-6">
+      <div className="p-6"> {/* Card body */}
         <h4 className="text-lg font-gilroy font-semibold mb-4">Key Features</h4>
         <ul className="space-y-2">
           {features.map((feature) => (
@@ -90,6 +90,20 @@ const VersionsSection = () => {
         "Advanced battery optimization and usage insights",
       ],
       delay: 0.4,
+    },
+    {
+      version: "v4",
+      name: "IncredibleOS v4",
+      baseVersion: "One UI 4.1 Android 12",
+      color: "bg-incredible-v4",
+      features: [
+        "Most Stable Rom Ever Made with almost no Bugs!!",
+        "Enhanced camera features with All Modes Working",
+        "New One UI 6 font and design language for a fresh look",
+        "Smarter multitasking with split-screen improvements",
+        "Advanced battery optimization and usage insights",
+      ],
+      delay: 0.4,
     }
   ];
 
@@ -107,12 +121,12 @@ const VersionsSection = () => {
             Choose Your <span className="text-incredible-primary">Version</span>
           </h2>
           <p className="text-incredible-muted max-w-2xl mx-auto">
-            IncredibleOS comes in three different versions, each based on a different version of One UI.
+            IncredibleOS comes in four different versions, each based on a different version of One UI.
             Choose the one that best fits your needs and preferences.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {versions.map((version) => (
             <VersionCard
               key={version.version}
